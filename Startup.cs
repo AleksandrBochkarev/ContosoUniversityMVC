@@ -52,6 +52,7 @@ namespace ContosoUniversity
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseRequestLocalization("en-US"); //support for locale en us
 
             app.UseMvc(routes =>
             {
